@@ -1,0 +1,147 @@
+/* Plain grayscale documentation style.
+   Hierarchy comes from font-size only — no color is used to signal importance. */
+
+* { box-sizing: border-box; }
+
+body {font-family: "Fredoka", sans-serif;
+  margin: 0;
+  padding: 40px 24px 80px;
+  background: #ffffff;
+  color: #1a1a1a;
+  
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+a {
+  color: #1a1a1a;
+}
+
+/* ---- Card (listing) ---- */
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.s_img_cont {
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ddd;
+}
+
+.s_img { width: 100%; height: 100%; object-fit: contain; }
+
+.card-body { flex: 1; }
+
+.s_text {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dist_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.s_dis {
+  font-size: 14px;
+  text-align: left;
+}
+
+.s_dis a { margin-left: 8px; }
+
+.price {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* ---- Service guide (detail page) ---- */
+
+.back-link {font-size:medium;
+  font-weight:bold;
+  color:#1A5E63;
+
+  display: inline-block;
+  
+  margin-bottom: 24px;
+  text-decoration: none;
+}
+.back-link:hover { text-decoration: underline; }
+
+.guide-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #777;
+  margin: 0 0 6px;
+  text-align: left;
+}
+
+.guide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.service-title {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+}
+
+.service-price {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.guide-meta {
+  font-size: 13px;
+  color: #555;
+  text-align: left;
+  margin: 14px 0 0;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  margin: 26px 0 8px;
+}
+
+p {
+  font-size: 15px;
+  text-align: left;
+  margin: 0 0 12px;
+  max-width: 65ch;
+}

@@ -1,0 +1,127 @@
+.notifications {
+    width: 26vw;             /* Matches the width of the Quick Action box */
+    height: 150px;           /* Increased height to fit text */
+    border-radius: 10px;
+    background: #FFFFFF;
+    outline: 2px solid #E5E7EB; /* Thinner red outline for a cleaner look */
+    padding: 0px 15px;
+    box-sizing: border-box;  /* Ensures padding doesn't break the width */
+    overflow-y: auto ;        /* Creates a vertical scrollbar if text overflows */
+    overflow-x: auto;        /* Creates a horizontal scrollbar if text is too wide */
+    box-shadow: 0px 0px 3px #FAF9F9;
+    animation:entry-img 3.2s ease forwards;
+    transition:box-shadow 1.5s  ease,margin-bottom 0.3s,width 1s ease,height 1s ease;
+}
+.notifications:focus,
+.notifications:focus-within{
+    z-index:998;
+    box-shadow: -200px 0px 60px 900px #FAF9F9;
+    width:40vw;
+    height:30vh;
+    margin-bottom:500px;
+    
+}
+/* Customizing the scrollbar to make it look nice and thin */
+.notifications::-webkit-scrollbar {
+    width: 6px;
+    height: 3px;
+}
+.notifications::-webkit-scrollbar-thumb {
+    background: #1A5E63; 
+    border-radius: 10px;
+}
+
+/* 2. The "What's New" Header */
+.notif-header {border-radius:10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #991818; 
+    margin-top:0;         /* Red text to match the theme */
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E5E7EB;
+    position: sticky;        /* Keeps the header at the top while scrolling */
+    top: 0;
+    background: #FFFFFF;
+}
+
+/* 3. The List of Notifications */
+.notif-list {
+    list-style-type: none;   /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.notif-list li {
+    font-size: 13px;
+    color: #687280;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    border-bottom: 1px dashed #E5E7EB; /* Separator between notifications */
+    padding-bottom: 5px;
+}
+
+.notif-list li:last-child {
+    border-bottom: none;     /* Removes separator from the last item */
+}
+@media(max-width:760px){
+    .notifications{
+        transition:transform 1s  ease-in-out,width 1.5s ease,height 1.5s ease;
+     }
+     .notifications::-webkit-scrollbar {padding-top:5px;
+    display:none;
+    width: 0px;
+    height: 0px;
+}
+.notifications:focus-within{
+    width:95vw;
+    margin-right:1vw;
+}
+.notif-list li {
+    font-size: 20px;padding-bottom: 10px;}
+.notifications:focus,
+.notifications:focus-within{
+    width:65vw;
+    height : 40vh;
+    transform: translateX(-40%);
+}
+}
+@media(max-width:480px){
+    .notifications{margin-bottom:3px;
+    width:130px;margin-top:-10px;
+    padding-bottom:5px;
+    margin-left:6vw;
+    margin-right:0vw;  
+    font-weight:700;
+    font-size:15px;
+    padding-left:auto;
+    z-index:10;
+    height: 30px;
+    opacity:0;
+    transition:padding-top 1s ease, transform 1s ease-in-out,margin-bottom 0.5s 0.5s ease,height 1s ease,width 1s ease,box-shadow 0.5s  ease-in ,outline 1s ease; 
+    transform-origin: center;
+    animation: go 1s 7.5s ease forwards;}
+
+    .notifications::-webkit-scrollbar-thumb {
+    background: #1A5E63; 
+    border-radius: 10px;
+}
+.notifications::-webkit-scrollbar {padding-top:5px;
+    display:none;
+    width: 0px;
+    height: 0px;
+}
+.notif-header{margin-bottom: 0px;
+    font-size:17px;
+    padding-bottom: 10px;
+    padding-top:5px;
+    border-bottom: 0px solid #E5E7EB;}
+    .notifications:focus,
+.notifications:focus-within{
+    width:95vw;
+    margin-right:1vw;
+    transform:translateX(0%);
+}
+.notif-list li {
+    font-size: 20px;padding-bottom: 10px;}
+}

@@ -1,0 +1,11 @@
+footer {animation: foot 0.1s 3s ease forwards;
+    opacity:0;
+    margin-top:50px;
+    padding-left:30px;
+    background:white;
+    box-shadow: 0px 0px 10px #E5E7EB ;
+}
+@keyframes foot{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
