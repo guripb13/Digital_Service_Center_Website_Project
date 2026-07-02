@@ -77,3 +77,30 @@ body {font-family: "Fredoka", sans-serif;
            filter: drop-shadow(50px 0px 80px rgba(255,255,251,0.9)); }
 }
 
+.recommend{position: fixed;
+  color: white;
+  opacity:0;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center; 
+  margin: 0 auto 20px auto; 
+  padding: 10px 0; 
+  animation: reco 3s 0.5s ease forwards;
+}
+@keyframes reco {
+  0%{opacity:1;
+    transform:translateY(10%);
+    
+  }
+  50%{display:block;translateY:0%;color:white;
+    font-size:large;
+  }
+  90%{transform:translateY(0%);opacity: 1;font-size:large;}
+  100%{color:#0F5449;
+    opacity: 0;transform:translateY(80%);
+    display: none;
+  }
+}
