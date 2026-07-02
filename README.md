@@ -27,7 +27,7 @@ The website is designed for visitors who need quick information about document-r
 ## Project Structure
 
 ```text
-CSC/
+/
 |-- index.html
 |-- README.md
 |-- css/
