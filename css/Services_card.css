@@ -221,6 +221,7 @@ a{margin-right:3px;
   gap: 5px;
   margin-top: auto; 
   margin-bottom: 3px;
+  margin-right: 0%;
 }
 #card-box:focus a{font-size:small;
 }
