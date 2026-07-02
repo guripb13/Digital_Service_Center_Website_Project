@@ -109,8 +109,9 @@
     
      }
      .quick_action:hover {
-        height : 120px;width:70vw !important;
-        transform: translateY(1%) scale(1.1);
+        height : 120px;width:40vw !important;
+        transform: translate(-20%,1%) scale(1.1) ;
+        
         margin-bottom:700px;
         box-shadow: 0px 0px 30px 500px #E5E7EB ;
         
