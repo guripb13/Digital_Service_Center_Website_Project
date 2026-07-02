@@ -1,6 +1,10 @@
-footer {animation: foot 0.1s 3s ease forwards;
+footer {
+    position:block;
+    animation: foot 0.1s 3s ease forwards;
+    width:auto;
     opacity:0;
-    margin-top:50px;
+    bottom:0;
+    margin-top:100px;
     padding-left:30px;
     background:white;
     box-shadow: 0px 0px 10px #E5E7EB ;
