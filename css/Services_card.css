@@ -111,7 +111,7 @@
 
 .dist_cont{display: flex;
   align-items: center;
-  gap:30px;
+gap:30px;
 justify-content:space-between;
 margin-bottom:3px;}
 
@@ -185,7 +185,7 @@ a{margin-right:3px;
      .card{display:flex;
         -webkit-tap-highlight-color: transparent;
         flex-direction:row;
-        width:85vw;
+        width:70vw;
         height: 15vh;
          animation: entry-card 1s 6s  ease-out forwards;
      }
@@ -205,7 +205,7 @@ a{margin-right:3px;
 }
 
      #s_text{
-        padding-left:2vw;
+        padding-left:5vw;
         font-size: 200px !important;
         
         font-weight: 700;
@@ -216,14 +216,20 @@ a{margin-right:3px;
   height: 100%; 
 }
      .dist_cont {
+      width:100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
+  gap: auto;
   margin-top: auto; 
   margin-bottom: 3px;
-  margin-right: 0%;
+  margin-right:0px;
 }
-#card-box:focus a{font-size:medium;
+#card-box:focus a{font-size:3vw;
 }
+.price{margin-left:auto;left:100%;
+    margin-right:3px;}
+.s_dis{font-size:2vw;
+    margin-left:0px;
+    margin-right:auto;}
 }
