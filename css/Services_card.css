@@ -186,7 +186,7 @@ a{margin-right:3px;
         -webkit-tap-highlight-color: transparent;
         flex-direction:row;
         width:70vw;
-        height: 15vh;
+        height: 17vh;
          animation: entry-card 1s 6s  ease-out forwards;
      }
      
