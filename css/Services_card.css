@@ -185,7 +185,7 @@ a{margin-right:3px;
      .card{display:flex;
         -webkit-tap-highlight-color: transparent;
         flex-direction:row;
-        width:80vw;
+        width:85vw;
         height: 15vh;
          animation: entry-card 1s 6s  ease-out forwards;
      }
