@@ -192,6 +192,7 @@ a{margin-right:3px;
      
      .s_img_cont{
         justify-items:center;
+        width: 100px;
         max-width:100px;
         height:auto;
         outline:1px solid #E5E7EB;
