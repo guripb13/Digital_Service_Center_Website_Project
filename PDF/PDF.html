@@ -5,7 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Report</title>
 </head >
-<body style="margin:0;padding:0;">
+<body >
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #pdf-fallback {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            z-index: 2;
+            text-align: center;
+            padding: 50px 0px 50px 0px;
+            background: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+            
+        }
+        p{animation: alert 5s ease infinite;font-size: large;}
+        @keyframes alert{
+            50%{color:red;opacity:0.9;}
+            60%{opacity:1;}
+        
+            100%{color:black;}
+        }
+        @media (max-width: 650px) {
+            #pdf-viewer {
+                display: none;
+                user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                
+            }
+        }
+        #pdf-viewer {
+            position: absolute;
+            user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -webkit-touch-callout: none;
+            /* allow scrolling while preventing other pointer interactions */
+            pointer-events: auto;
+            touch-action: pan-y;
+            -webkit-overflow-scrolling: touch;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            z-index: 1;
+            overflow: auto;
+        }
+    </style>
+    <h3 id="pdf-fallback"><p>If you are unable to view the PDF, please use any Other Browser in Desktop or Laptop</p></h3>
     <embed src="Project Report pdf.pdf" type="application/pdf" style="width: 100vw; height: 100vh;margin:0;padding:0;border:none;">
 </body>
 </html>
