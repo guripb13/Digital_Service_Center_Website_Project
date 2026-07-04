@@ -4,7 +4,7 @@
     border-radius: 10px;
     background: #FFFFFF;
     outline: 2px solid #E5E7EB; /* Thinner red outline for a cleaner look */
-    padding: 0px 15px;
+    padding: 20px 15px 0px 15px;
     box-sizing: border-box;  /* Ensures padding doesn't break the width */
     overflow-y: auto ;        /* Creates a vertical scrollbar if text overflows */
     overflow-x: auto;        /* Creates a horizontal scrollbar if text is too wide */
@@ -26,9 +26,16 @@
     width: 6px;
     height: 3px;
 }
+.notifications::-webkit-scrollbar-track {
+    background: transparent;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 .notifications::-webkit-scrollbar-thumb {
     background: #1A5E63; 
     border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* 2. The "What's New" Header */
