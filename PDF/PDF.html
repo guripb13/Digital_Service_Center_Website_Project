@@ -34,7 +34,7 @@
             100%{color:black;}
         }
         
-        #pdf-viewer {filter:blur(2px);
+        #pdf-viewer {filter:blur(1px);
             position: absolute;
             user-select: none;
             -webkit-user-select: none;
@@ -52,15 +52,7 @@
             z-index: 1;
             overflow: auto;
         }
-        @media (max-width: 650px) {
-            #pdf-viewer {opacity:0;
-                display: none !important;
-                user-select: none;
-                -webkit-user-select: none;
-                -ms-user-select: none;
-                
-            }
-        }
+        
     </style>
     <div id="pdf-fallback"><p>If you are unable to view the PDF, please use another browser on your desktop or laptop</p></div>
     <embed id="pdf-viewer" src="Project Report pdf.pdf" type="application/pdf" style="width: 100vw; height: 100vh;margin:0;padding:0;border:none;">
