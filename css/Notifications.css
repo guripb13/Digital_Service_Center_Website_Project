@@ -4,7 +4,7 @@
     border-radius: 10px;
     background: #FFFFFF;
     outline: 2px solid #E5E7EB; /* Thinner red outline for a cleaner look */
-    padding: 20px 15px 0px 15px;
+    padding: 0px 15px 0px 15px;
     box-sizing: border-box;  /* Ensures padding doesn't break the width */
     overflow-y: auto ;        /* Creates a vertical scrollbar if text overflows */
     overflow-x: auto;        /* Creates a horizontal scrollbar if text is too wide */
@@ -107,7 +107,6 @@
     transition:padding-top 1s ease, transform 1s ease-in-out,margin-bottom 0.5s 0.5s ease,height 1s ease,width 1s ease,box-shadow 0.5s  ease-in ,outline 1s ease; 
     transform-origin: center;
     animation: go 1s 7.5s ease forwards;}
-
     .notifications::-webkit-scrollbar-thumb {
     background: #1A5E63; 
     border-radius: 10px;
