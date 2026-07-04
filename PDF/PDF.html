@@ -34,7 +34,7 @@
             100%{color:black;}
         }
         
-        #pdf-viewer {filter:blur(0.5px);
+        #pdf-viewer {filter:blur(1px);
             position: absolute;
             user-select: none;
             -webkit-user-select: none;
@@ -63,6 +63,6 @@
         
     </style>
     <div id="pdf-fallback"><p>If you are unable to view the PDF, please use another browser</p></div>
-    <embed id="pdf-viewer" src="Project Report pdf.pdf" type="application/pdf" style="width: 100vw; height: 100vh;margin:0;padding:0;border:none;">
+    <embed id="pdf-viewer" src="Project Report pdf.pdf" type="application/pdf" style="width: 100vw; height: 100vh;margin:0;padding:0;border:none; filter:blur(1px)">
 </body>
 </html>
