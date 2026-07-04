@@ -19,34 +19,26 @@
             margin: 0;
             z-index: 2;
             text-align: center;
-            padding: 50px 0px 50px 0px;
+            padding: 50px 10px 50px 10px;
             background: rgb(255, 255, 255);
             font-family: Arial, sans-serif;
             
         }
         p{animation: alert 5s ease infinite;font-size: large;}
         @keyframes alert{
-            50%{color:red;opacity:0.9;}
+            50%{color:rgb(179, 0, 0);opacity:0.9;}
             60%{opacity:1;}
         
             100%{color:black;}
         }
-        @media (max-width: 650px) {
-            #pdf-viewer {
-                display: none;
-                user-select: none;
-                -webkit-user-select: none;
-                -ms-user-select: none;
-                
-            }
-        }
+        
         #pdf-viewer {
             position: absolute;
             user-select: none;
             -webkit-user-select: none;
             -ms-user-select: none;
             -webkit-touch-callout: none;
-            /* allow scrolling while preventing other pointer interactions */
+            
             pointer-events: auto;
             touch-action: pan-y;
             -webkit-overflow-scrolling: touch;
@@ -58,8 +50,17 @@
             z-index: 1;
             overflow: auto;
         }
+        @media (max-width: 650px) {
+            #pdf-viewer {opacity:0;
+                display: none !important;
+                user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                
+            }
+        }
     </style>
     <h3 id="pdf-fallback"><p>If you are unable to view the PDF, please use any Other Browser in Desktop or Laptop</p></h3>
-    <embed src="Project Report pdf.pdf" type="application/pdf" style="width: 100vw; height: 100vh;margin:0;padding:0;border:none;">
+    <embed id="pdf-viewer" src="Project Report pdf.pdf" type="application/pdf" style="width: 100vw; height: 100vh;margin:0;padding:0;border:none;">
 </body>
 </html>
