@@ -52,6 +52,15 @@
             z-index: 1;
             overflow: auto;
         }
+        @media (max-width: 650px) {
+            #pdf-viewer {
+                display: none;
+                user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                
+            }
+        }
         
     </style>
     <div id="pdf-fallback"><p>If you are unable to view the PDF, please use another browser</p></div>
