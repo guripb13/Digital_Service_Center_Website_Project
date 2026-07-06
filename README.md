@@ -27,7 +27,7 @@ The website is designed for visitors who need quick information about document-r
 ## Project Structure
 
 ```text
-/
+../
 |-- index.html
 |-- README.md
 |-- css/
@@ -40,7 +40,8 @@ The website is designed for visitors who need quick information about document-r
 |   |-- Services_card.css
 |   `-- style.css
 |-- images/
-|   |-- csc-logo.png
+|   |-- CSC-logo.png
+|   |-- favicon.png
 |   `-- services/
 |       |-- Aadhaar.png
 |       |-- Income Cert.png
@@ -48,6 +49,9 @@ The website is designed for visitors who need quick information about document-r
 |       |-- Pan.png
 |       |-- Passport.png
 |       `-- Voter.png
+|-- PDF/
+|   |-- PDF.html
+|   |-- Project Report pdf.pdf
 |-- JS/
 |   `-- JS.js
 |-- Service Guide/
@@ -59,6 +63,7 @@ The website is designed for visitors who need quick information about document-r
 |   `-- Voter Card Update.html
 `-- video/
     `-- CSC.mp4
+
 ```
 
 ## Pages
